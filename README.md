@@ -13,6 +13,10 @@ Dockerized MySQL8 / PHPMyAdmin
 `docker compose --env-file .env-testu -p <compName> up -d`
 
 ## Dump table
-`docker compose -p <compName> exec -it db mysqldump -u poe -c -p<password> -N -t -y --skip-opt --skip-comments --skip-quote-names  post_suivi_stagiaire trainee > data-trainee.sql`
+`docker compose -p <compName> exec -it db mysqldump -u <userName> -c -p<password> -N -t -y --skip-opt --skip-comments --skip-quote-names <baseName> trainee > data-trainee.sql`
 
-`docker exec -it <compName> mysqldump -u poe -c -p<password> -N -t -y --skip-opt --skip-comments --skip-quote-names  post_suivi_stagiaire trainee > data-trainee.sql`
+`docker exec -it <compName> mysqldump -u <userName> -c -p<password> -N -t -y --skip-opt --skip-comments --skip-quote-names  <baseName> trainee > data-trainee.sql`
+
+## Play SQL script
+PowerShell : `Get-Content .\sql\data-poe.sql | docker compose -p dbpoe-app exec -T db mysql -u poe -p<password> <baseName>`
+Cmd : `docker compose -p <compName> exec -T db mysql -u <userName> -p<password> <baseName> < sql\data-poe.sql`

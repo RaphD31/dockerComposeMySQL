@@ -1,17 +1,4 @@
-/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-
-INSERT INTO poe (id, begin_date, end_date, title, type) VALUES (1,'2022-10-24','2023-01-27','Fullstack Java Angular','POEI');
-INSERT INTO poe (id, begin_date, end_date, title, type) VALUES (2,'2022-12-01','2023-12-14','DevOps','POEC');
-INSERT INTO poe (id, begin_date, end_date, title, type) VALUES (4,'2013-12-04','2016-12-08','Java 6','POEI');
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
-
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+INSERT INTO poe (id, begin_date, end_date, title, poe_type) VALUES (1,'2022-10-24','2023-01-27','Fullstack Java Angular','POEI');
+INSERT INTO poe (id, begin_date, end_date, title, poe_type) VALUES (2,'2022-12-01','2023-12-14','DevOps','POEC');
+INSERT INTO poe (id, begin_date, end_date, title, poe_type) VALUES (4,'2013-12-04','2016-12-08','Java 6','POEI');
 
