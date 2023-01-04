@@ -17,6 +17,10 @@ Dockerized MySQL8 / PHPMyAdmin
 
 `docker exec -it <compName> mysqldump -u <userName> -c -p<password> -N -t -y --skip-opt --skip-comments --skip-quote-names  <baseName> trainee > data-trainee.sql`
 
-## Play SQL script
+## Play SQL script (réinjecter de la donnée dans un container)
 PowerShell : `Get-Content .\sql\data-poe.sql | docker compose -p dbpoe-app exec -T db mysql -u poe -p<password> <baseName>`
 Cmd : `docker compose -p <compName> exec -T db mysql -u <userName> -p<password> <baseName> < sql\data-poe.sql`
+
+## Terminal SQL (connecté à la BDD)
+`docker compose -p <compName> exec -it db mysql -u root -p<password> <baseName>`
+ctrl + d pour sortir
