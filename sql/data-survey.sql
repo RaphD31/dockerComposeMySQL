@@ -1,8 +1,5 @@
-INSERT INTO survey(id, title, level, poe_type) 
-    VALUES (1 , 'Premier Retour', 'ONE_MONTH', 'POEI');
-INSERT INTO survey(id, title, level, poe_type) 
-    VALUES (2 , 'deuxième retour', 'SIX_MONTHS', 'POEI');
-INSERT INTO survey(id, title, level, poe_type) 
-    VALUES (3 , 'Le Retour Final', 'ONE_YEAR', 'POEI');
-    
+INSERT INTO `survey` (`id`, `level`, `poe_type`, `title`) VALUES
+    (6, 'SIX_MONTHS', 'POEI', 'Questionnaire POEI à 6 mois'),
+    (7, 'ONE_YEAR', 'POEI', 'Questionnaire POEI à 1 an');
+
 SELECT setval('survey_id_seq', max(id)) FROM survey;

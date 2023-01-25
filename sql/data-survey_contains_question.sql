@@ -1,6 +1,16 @@
-INSERT INTO survey_contains_question (survey_id, question_id) 
-    VALUES (1, 1);
-INSERT INTO survey_contains_question (survey_id, question_id) 
-    VALUES (1, 2);
-INSERT INTO survey_contains_question (survey_id, question_id) 
-    VALUES (2, 1);
+INSERT INTO `survey_contains_question` (`survey_id`, `question_id`) VALUES
+    (6, 25),
+    (7, 25),
+    (6, 26),
+    (7, 26),
+    (6, 27),
+    (7, 27),
+    (6, 28),
+    (7, 28),
+    (6, 29),
+    (7, 29),
+    (6, 30),
+    (7, 30),
+    (6, 31),
+    (7, 31),
+    (7, 32);
