@@ -1,19 +1,21 @@
 /*-- POEI 1 mois --*/
-(34, 'CHOOSE_ONE', `Comment s\'est déroulée votre intégration chez votre nouvel employeur ?`),
-(35, 'CHOOSE_ONE', 'Etes-vous satisfait des missions qui vous sont confiées ?'),
-(36, 'CHOOSE_ONE', 'Les missions confiées correspondent-elles à la formation que vous avez reçue ?'),
-(37, 'CHOOSE_ONE', 'Comment évaluez-vous votre accompagnement sur vos projets (tuteur, manager, équipe projet, ...) ?'),
-(38, 'CHOOSE_ONE', `Comment évaluez-vous votre relation avec l\'équipe projet ?`),
-(39, 'CHOOSE_ONE', 'Comment évaluez-vous votre relation avec votre Employeur ?'),
-(40, 'CHOOSE_ONE', `Comment s\'est déroulée votre intégration chez votre nouvel employeur ?`),
-(41, 'CHOOSE_ONE', 'Etes-vous satisfait des missions qui vous sont confiées ?'),
-(42, 'CHOOSE_ONE', 'Les missions confiées correspondent-elles à la formation que vous avez reçue ?'),
-(43, 'CHOOSE_ONE', 'Comment évaluez-vous le niveau de difficulté des missions qui vous sont confiées ?'),
-(44, 'CHOOSE_ONE', 'Comment évaluez-vous votre accompagnement sur vos projets (tuteur, manager, équipe projet, ...) ?'),
-(45, 'CHOOSE_ONE', `Comment évaluez-vous votre relation avec l\'équipe projet ?`),
-(46, 'CHOOSE_ONE', `Comment évaluez-vous votre relation avec votre Employeur ?`),
-(47, 'FREE', 'Sur quel site travaillez-vous ?'),
-(48, 'YES_NO', 'Avez-vous été intégré avec un autre membre de votre promotion POE ?');
+
+INSERT INTO `question` (`id`, `answer_type`, `text`) VALUES
+    (34, 'CHOOSE_ONE', `Comment s\'est déroulée votre intégration chez votre nouvel employeur ?`),
+    (35, 'CHOOSE_ONE', 'Etes-vous satisfait des missions qui vous sont confiées ?'),
+    (36, 'CHOOSE_ONE', 'Les missions confiées correspondent-elles à la formation que vous avez reçue ?'),
+    (37, 'CHOOSE_ONE', 'Comment évaluez-vous votre accompagnement sur vos projets (tuteur, manager, équipe projet, ...) ?'),
+    (38, 'CHOOSE_ONE', `Comment évaluez-vous votre relation avec l\'équipe projet ?`),
+    (39, 'CHOOSE_ONE', 'Comment évaluez-vous votre relation avec votre Employeur ?'),
+    (40, 'CHOOSE_ONE', `Comment s\'est déroulée votre intégration chez votre nouvel employeur ?`),
+    (41, 'CHOOSE_ONE', 'Etes-vous satisfait des missions qui vous sont confiées ?'),
+    (42, 'CHOOSE_ONE', 'Les missions confiées correspondent-elles à la formation que vous avez reçue ?'),
+    (43, 'CHOOSE_ONE', 'Comment évaluez-vous le niveau de difficulté des missions qui vous sont confiées ?'),
+    (44, 'CHOOSE_ONE', 'Comment évaluez-vous votre accompagnement sur vos projets (tuteur, manager, équipe projet, ...) ?'),
+    (45, 'CHOOSE_ONE', `Comment évaluez-vous votre relation avec l\'équipe projet ?`),
+    (46, 'CHOOSE_ONE', `Comment évaluez-vous votre relation avec votre Employeur ?`),
+    (47, 'FREE', 'Sur quel site travaillez-vous ?'),
+    (48, 'YES_NO', 'Avez-vous été intégré avec un autre membre de votre promotion POE ?');
 
 /*-- POEI 6 mois --*/
 
